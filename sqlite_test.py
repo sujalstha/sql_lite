@@ -1,4 +1,5 @@
 import sqlite3
+from employee import Employee
 
 con = sqlite3.connect('employee.db')
 c = con.cursor()
@@ -7,6 +8,8 @@ c.execute("""CREATE TABLE employees (
             last text,
             pay int,
     )""")
+emp1 = Employee()
+emp2 = Employee()
 
 c.execute("INSERT INTO employees VALUES ('Sujal', 'Shrestha', 50000)")
 
