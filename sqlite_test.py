@@ -20,7 +20,7 @@ c.execute("INSERT INTO employees VALUES (?, ?, ?)", (emp1.first, emp1.last, emp1
 
 con.commit()
 
-c.execute("SELECT * FORM employees WHERE last='Shrestha' ")
+c.execute("SELECT * FROM employees WHERE last='Shrestha' ")
 
 print(c.fetchall())
 
