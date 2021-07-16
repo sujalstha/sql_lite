@@ -13,7 +13,10 @@ class Employee:
         return '{} {}'.format(self.first, self.last)
 
     @property
-    def emp_pay(self):
+    def emp_real_pay(self):
         tax_cut = self.pay/.05
         self.pay = self.pay-tax_cut
-        return '{} {} pay is {}'.format(self.first, self.last, self.pay)
+        return "{} {}'s pay is {}".format(self.first, self.last, self.pay)
+
+    def __repr__(self):
+        return "Employee( '{}', '{}', '{}')".format(self.first, self.last, self.pay)
