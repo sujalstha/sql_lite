@@ -16,7 +16,7 @@ c.execute("INSERT INTO employees VALUES ('Sujal', 'Shrestha', 50000)")
 
 con.commit()
 
-c.execute()
+c.execute("INSERT INTO employees VALUES (?, ?, ?)", (emp1.first, emp1.last, emp1.pay))
 
 con.commit()
 
