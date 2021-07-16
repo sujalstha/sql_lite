@@ -2,7 +2,8 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        self.pay = pay
+        tax = self.pay/0.5
+        self.pay = self.pay - tax
 
     @property
     def email(self):
