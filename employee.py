@@ -7,3 +7,7 @@ class Employee:
     @property
     def email(self):
         return '{}{}@gmail.com'.format(self.first, self.last)
+
+    @property
+    def full_name(self):
+        return '{} {}'.format(self.first, self.last)
