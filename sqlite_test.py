@@ -8,8 +8,8 @@ c.execute("""CREATE TABLE employees (
             last text,
             pay int,
     )""")
-emp1 = Employee()
-emp2 = Employee()
+emp1 = Employee('Sujal', 'Shrestha', '50000')
+emp2 = Employee('Rajen', 'Bajgain', '60000')
 
 c.execute("INSERT INTO employees VALUES ('Sujal', 'Shrestha', 50000)")
 
