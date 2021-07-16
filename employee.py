@@ -2,7 +2,7 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        tax = self.pay/0.5
+        tax = self.pay / 0.5  # Oklahoma Tax Cut
         self.pay = self.pay - tax
 
     @property
