@@ -8,5 +8,7 @@ c.execute("""CREATE TABLE employees (
             pay int,
     )""")
 
+c.execute("INSERT INTO employees VALUES ('Sujal', 'Shrestha', 50000)")
+
 con.commit()
 con.close()
