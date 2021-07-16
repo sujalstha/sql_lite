@@ -17,4 +17,5 @@ c.execute("SELECT * FORM employees WHERE last='Shrestha' ")
 print(c.fetchall())
 
 con.commit()
+
 con.close()
