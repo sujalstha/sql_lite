@@ -15,8 +15,6 @@ class Employee:
 
     @property
     def emp_real_pay(self):
-        tax_cut = self.pay/.05
-        self.pay = self.pay-tax_cut
         return "{} {}'s pay is {}".format(self.first, self.last, self.pay)
 
     def __repr__(self):
