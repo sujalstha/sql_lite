@@ -18,6 +18,17 @@ def insert_emp(emp):
                                                                      'pay': emp.pay})
 
 
+def get_emp_by_name(last):
+    pass
+
+
+def update_pay(emp, pay):
+    pass
+
+
+def remove_emp(emp):
+    pass
+
 emp1 = Employee('Sujal', 'Shrestha', '50000')
 emp2 = Employee('Rajen', 'Bajgain', '60000')
 
