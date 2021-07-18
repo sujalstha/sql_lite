@@ -46,7 +46,7 @@ con.commit()
 
 con.commit()
 
-c.execute("SELECT * FROM employees WHERE last='?' ", ('Shrestha',))
+c.execute("SELECT * FROM employees WHERE last='?' ", {'last': emp2.last})
 
 print(c.fetchall())
 
