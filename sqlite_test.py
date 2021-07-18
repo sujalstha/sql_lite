@@ -10,8 +10,12 @@ c = con.cursor()
             last text,
             pay int,
     )""")'''
+
+
 def insert_emp(emp):
-    c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': em})
+    c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first})
+
+
 emp1 = Employee('Sujal', 'Shrestha', '50000')
 emp2 = Employee('Rajen', 'Bajgain', '60000')
 
