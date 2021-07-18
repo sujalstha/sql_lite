@@ -13,9 +13,10 @@ c = con.cursor()
 
 
 def insert_emp(emp):
-    c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first,
-                                                                     'last': emp.last,
-                                                                     'pay': emp.pay})
+    with con:
+        c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first,
+                                                                         'last': emp.last,
+                                                                         'pay': emp.pay})
 
 
 def get_emp_by_name(last):
