@@ -50,7 +50,7 @@ c.execute("SELECT * FROM employees WHERE last='?' ", {'last': emp2.last})
 
 print(c.fetchall())
 
-c.execute("SELECT * FROM employees WHERE last =:last"), {'last': 'Smith'}
+c.execute("SELECT * FROM employees WHERE last='Smith'")
 
 print(c.fetchall())
 
