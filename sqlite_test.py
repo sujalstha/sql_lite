@@ -20,7 +20,10 @@ def insert_emp(emp):
 
 
 def get_emp_by_name(last):
-    pass
+    c.execute("SELECT * FROM employees WHERE last =:last", {
+        'last': last
+    })
+    return c.fetchall()
 
 
 def update_pay(emp, pay):
