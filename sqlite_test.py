@@ -13,7 +13,9 @@ c = con.cursor()
 
 
 def insert_emp(emp):
-    c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first})
+    c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp.first,
+                                                                     'last': emp.last,
+                                                                     'pay': emp.pay})
 
 
 emp1 = Employee('Sujal', 'Shrestha', '50000')
