@@ -28,7 +28,8 @@ def get_emp_by_name(last):
 
 def update_pay(emp, pay):
     with con:
-        c.execute()
+        c.execute("DELETE from employees WHERE first = :first AND last = :last",
+                  {'first': emp.first, 'last': emp.last})
 
 
 def remove_emp(emp):
