@@ -27,7 +27,8 @@ def get_emp_by_name(last):
 
 
 def update_pay(emp, pay):
-    pass
+    with con:
+        c.execute()
 
 
 def remove_emp(emp):
