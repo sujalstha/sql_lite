@@ -42,6 +42,15 @@ def remove_emp(emp):
 emp1 = Employee('Sujal', 'Shrestha', '50000')
 emp2 = Employee('Rajen', 'Bajgain', '60000')
 
+insert_emp(emp1)
+insert_emp(emp2)
+
+update_pay(emp2, 150000)
+update_pay(emp1, 1000)
+
+emps = get_emp_by_name('Shrestha')
+print(emps)
+
 '''c.execute("INSERT INTO employees VALUES (?, ?, ?)", (emp1.first, emp1.last, emp1.pay))
 
 con.commit()
