@@ -28,8 +28,7 @@ def get_emp_by_name(last):
 
 def update_pay(emp, pay):
     with con:
-        c.execute("""Update employees SET pay = :pay"
-                   WHERE first = :first AND last = :last""",
+        c.execute("Update employees SET pay = :pay WHERE first = :first AND last = :last",
                   {'first': emp.first, 'last': emp.last, 'pay': emp.pay})
 
 
