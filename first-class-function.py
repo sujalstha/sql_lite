@@ -5,4 +5,5 @@ def html_tag(tag):
 
     return wrap_text
 
+
 print_h1 = html_tag('h1')
