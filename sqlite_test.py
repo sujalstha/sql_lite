@@ -46,8 +46,9 @@ c.execute("INSERT INTO employees VALUES (?, ?, ?)", (emp1.first, emp1.last, emp1
 
 con.commit()
 
-# c.execute("INSERT INTO employees VALUES (:first, :last, :pay)",
-#          {'first': emp2.first, 'last': emp2.last, 'pay': emp2.pay})
+c.execute("INSERT INTO employees VALUES (:first, :last, :pay)", {'first': emp1.first,
+                                                                 'last': emp1.last,
+                                                                 'pay': emp1.pay})
 
 con.commit()
 
@@ -58,5 +59,7 @@ print(c.fetchall())
 c.execute("SELECT * FROM employees WHERE last='Smith'")
 
 print(c.fetchall())
+
+con.commit()
 
 con.close()
