@@ -5,6 +5,18 @@ def html_tag(tag):
     return wrap_text
 
 
+def outer_fun():
+    message = 'Hello'
+
+    def in_fun():
+        print(message)
+
+    return in_fun()
+
+
+outer_fun()
+
+
 def display():
     print('display function running = executable')
 
