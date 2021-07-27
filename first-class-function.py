@@ -14,6 +14,3 @@ def display():
 print_h1 = html_tag('p')
 print_h1('Test Headline!')
 print_h1('Another Headline!')
-display = html_tag(display)
-
-display(html_tag('h1'))
