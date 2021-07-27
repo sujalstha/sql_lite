@@ -5,7 +5,6 @@ def html_tag(tag):
     return wrap_text
 
 
-@html_tag
 def display():
     print('display function running = executable')
 
