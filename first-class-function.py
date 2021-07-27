@@ -5,16 +5,14 @@ def html_tag(tag):
     return wrap_text
 
 
-def outer_fun():
-    message = 'Hello'
-
-    def in_fun():
+def outer_function(message):
+    def in_function():
         print(message)
 
-    return in_fun()
+    return in_function()
 
 
-outer_fun()
+outer_function('Coat')
 
 
 def display():
