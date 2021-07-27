@@ -14,7 +14,7 @@ def display():
     print('display function running = executable')
 
 
-outer_function('Hello')
+x = outer_function(display)
 
 # print_h1 = html_tag('h1')
 print_h1 = html_tag('p')
