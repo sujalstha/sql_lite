@@ -16,6 +16,8 @@ def display():
 
 x = outer_function(display)
 
+print(x)
+
 # print_h1 = html_tag('h1')
 print_h1 = html_tag('p')
 print_h1('Test Headline!')
