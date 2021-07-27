@@ -9,15 +9,12 @@ def outer_function(message):
     def in_function():
         print(message)
 
-    return in_function()
-
-
-outer_function('Hello')
-
 
 def display():
     print('display function running = executable')
 
+
+outer_function('Hello')
 
 # print_h1 = html_tag('h1')
 print_h1 = html_tag('p')
