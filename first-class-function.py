@@ -12,7 +12,7 @@ def outer_function(message):
     return in_function()
 
 
-outer_function('Coat')
+outer_function('Hello')
 
 
 def display():
