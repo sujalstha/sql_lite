@@ -8,6 +8,7 @@ def html_tag(tag):
 def outer_function(func):
     def in_function():
         print('wrapper executed this before {}'.format(func.__name__))
+        return func
     return in_function
 
 
