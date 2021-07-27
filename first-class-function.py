@@ -5,9 +5,12 @@ def html_tag(tag):
     return wrap_text
 
 
-def outer_function(message):
+def outer_function(func):
     def in_function():
-        print(message)
+        print('wrapper executed this before {}'.format(func.__name__))
+        return func
+
+    return in_function
 
 
 @outer_function
