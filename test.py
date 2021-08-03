@@ -12,5 +12,5 @@ while str(input('Enter YES if you are ready: ')):
     accuracy = len(set(input_text.split() & word.split()))
     accuracy = accuracy/word_count
     time_taken = t1 - t2
-    wordPM =  word_count/time_taken
-    print(wordPM,accuracy, time_taken)
+    wordPM = word_count/time_taken
+    print(wordPM, accuracy, time_taken)
