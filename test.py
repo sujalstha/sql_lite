@@ -39,4 +39,9 @@ for i in range(10):
     goto(250, (170 - (i * gap_size * 2)))
     stamp()
 
+# WHITE SQUARES ROW 2
+for i in range(10):
+    goto(250 + gap_size, ((210 - gap_size) - (i * gap_size * 2)))
+    stamp()
+
 mainloop()
