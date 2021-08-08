@@ -1,5 +1,6 @@
 import turtle
 from turtle import *
+import time
 
 # SCREEN SETUP
 
@@ -86,6 +87,12 @@ green_turtle.shape("turtle")
 green_turtle.shapesize(1.5)
 green_turtle.penup()
 green_turtle.goto(-300, -150)
+
+# PAUSE FOR 5 SECOND BEFORE RACING
+time.sleep(1)
+
+color("black")
+shape("arrow")
 
 
 mainloop()
