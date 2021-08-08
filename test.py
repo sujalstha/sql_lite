@@ -55,4 +55,21 @@ for i in range(10):
     goto(251 + gap_size, ((190 - gap_size) - (i * gap_size * 2)))
     stamp()
 
+# TURTLE 1 - BLUE
+blue_turtle = Turtle()
+blue_turtle.color("cyan")
+blue_turtle.shape("turtle")
+blue_turtle.shapesize(1.5)
+blue_turtle.penup()
+blue_turtle.goto(-300, 150)
+
+# TURTLE 2 - PINK
+pink_turtle = Turtle()
+pink_turtle.color("magenta")
+pink_turtle.shape("turtle")
+pink_turtle.shapesize(1.5)
+pink_turtle.penup()
+pink_turtle.goto(-300, 50)
+
+
 mainloop()
