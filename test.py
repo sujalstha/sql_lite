@@ -71,5 +71,12 @@ pink_turtle.shapesize(1.5)
 pink_turtle.penup()
 pink_turtle.goto(-300, 50)
 
+# TURTLE 3 - YELLOW
+yellow_turtle = Turtle()
+yellow_turtle.color("yellow")
+yellow_turtle.shape("turtle")
+yellow_turtle.shapesize(1.5)
+yellow_turtle.penup()
+yellow_turtle.goto(-300, -50)
 
 mainloop()
