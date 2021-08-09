@@ -120,5 +120,11 @@ while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and \
         color("white")
         write("Yellow Won!", font=("Arial", 20, "bold"))
         color("chocolate")
+    elif green_turtle.xcor() >= 230:
+        goto(-100, 0)
+        pendown()
+        color("white")
+        write("Green Won!", font=("Arial", 20, "bold"))
+        color("chocolate")
 
 mainloop()
