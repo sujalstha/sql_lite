@@ -1,7 +1,7 @@
-
 from turtle import *
 import time
-import random
+from random import *
+
 # SCREEN SETUP
 
 setup(800, 500)
@@ -91,6 +91,9 @@ green_turtle.goto(-300, -150)
 # PAUSE FOR 5 SECOND BEFORE RACING
 time.sleep(1)
 
+color("black")
+shape("arrow")
+
 while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and \
         yellow_turtle.xcor() <= 230 and green_turtle.xcor() <= 230:
     blue_turtle.forward(randint(0, 11))
@@ -111,9 +114,11 @@ while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and \
         color("white")
         write("Pink Won!", font=("Arial", 20, "bold"))
         color("chocolate")
-
-color("black")
-shape("arrow")
-
+    elif yellow_turtle.xcor() >= 230:
+        goto(-100, 0)
+        pendown()
+        color("white")
+        write("Yellow Won!", font=("Arial", 20, "bold"))
+        color("chocolate")
 
 mainloop()
