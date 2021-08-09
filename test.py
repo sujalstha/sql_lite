@@ -91,6 +91,18 @@ green_turtle.goto(-300, -150)
 # PAUSE FOR 5 SECOND BEFORE RACING
 time.sleep(1)
 
+while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and \
+        yellow_turtle.xcor() <= 230 and green_turtle.xcor() <= 230:
+    blue_turtle.forward(randint(0, 11))
+    pink_turtle.forward(randint(0, 11))
+    yellow_turtle.forward(randint(0, 11))
+    green_turtle.forward(randint(0, 11))
+
+    if blue_turtle.xcor() >= 230:
+        goto(-100, 0)
+        pendown()
+        color("white")
+
 color("black")
 shape("arrow")
 
