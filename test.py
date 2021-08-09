@@ -1,7 +1,7 @@
-import turtle
+
 from turtle import *
 import time
-
+import random
 # SCREEN SETUP
 
 setup(800, 500)
