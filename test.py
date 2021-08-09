@@ -102,6 +102,15 @@ while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and \
         goto(-100, 0)
         pendown()
         color("white")
+        write("Blue Won!", font=("Arial", 20, "bold"))
+        color("chocolate")
+
+    elif pink_turtle.xcor() >= 230:
+        goto(-100, 0)
+        pendown()
+        color("white")
+        write("Pink Won!", font=("Arial", 20, "bold"))
+        color("chocolate")
 
 color("black")
 shape("arrow")
